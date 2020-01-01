@@ -44,9 +44,6 @@ config = configparser.ConfigParser()
 config.read("config.ini")
 MODE = config.get("bot_configs","mode")
 TOKEN = config.get("bot_configs","token")
-CLIENT_ID = config.get("bot_configs","client_id")
-CLIENT_SECRET = config.get("bot_configs","client_secret")
-USER_AGENT = config.get("bot_configs","user_agent")
 
 if MODE == "dev":
 	def run(updater):
